@@ -79,7 +79,7 @@ namespace AutoShutdown
         private void UpdateTimeLeft(DateTime now)
         {
             Remaining.Text = FormatRemainingTime(_endTime - now);
-            Title = $"Shutdown - {Remaining.Text}";
+            Title = $"{_initialTitle} - {Remaining.Text}";
         }
 
         private string FormatRemainingTime(TimeSpan timeSpan)
